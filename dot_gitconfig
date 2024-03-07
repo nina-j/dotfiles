@@ -1,0 +1,14 @@
+[user]
+	name = Nina Jensen
+	email = nije@boozt.com
+[core]
+	editor = vim
+	excludesfile = /home/nije/.gitignore
+[push]
+	default = current
+	autoSetupRemote = true
+[pull]
+	default = current
+	rebase = true
+[alias]
+	gone = ! git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D

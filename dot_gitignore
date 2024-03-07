@@ -1,0 +1,5 @@
+.devcontainer
+.venv
+.vscode
+.tool-versions
+.envrc

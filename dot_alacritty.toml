@@ -30,3 +30,6 @@ family = "Iosevka Term"
 
 [window]
 opacity = 0.8
+
+[shell]
+program = "/usr/bin/fish"

@@ -5,6 +5,8 @@ if status is-interactive
     direnv hook fish | source
 end
 
+set fish_greeting ""
+
 abbr -a ga 'git add'
 abbr -a gp 'git push'
 abbr -a gcan 'git commit --amend --no-edit'

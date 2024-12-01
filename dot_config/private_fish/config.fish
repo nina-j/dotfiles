@@ -3,6 +3,9 @@ if status is-interactive
     starship init fish | source
     eval (ssh-agent -c) &>/dev/null
     direnv hook fish | source
+    pyenv init - | source
+    bass source /etc/profile.d/google-cloud-cli.sh
+    zoxide init fish | source
 end
 
 set fish_greeting ""
@@ -14,7 +17,7 @@ abbr -a dc 'docker compose'
 abbr -a gco 'git checkout'
 abbr -a gpu 'git push -u'
 abbr -a gcob 'git checkout -b'
-abbr -a gpf 'git push --force-with-lease'
+abbr -a gpf 'git push --force'
 abbr -a gc 'git commit'
 abbr -a gca 'git commit --amend'
 abbr -a --set-cursor -- gpmr "git push -u -o merge_request.create -o merge_request.title=(jira)': %'"

@@ -1,6 +1,6 @@
 [user]
 	name = Nina Jensen
-	email = nije@boozt.com
+	email = hello@nina.run
 [core]
 	editor = vim
 	excludesfile = /home/nije/.gitignore

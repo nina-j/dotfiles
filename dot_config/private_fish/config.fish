@@ -2,9 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
     eval (ssh-agent -c) &>/dev/null
-    direnv hook fish | source
-    pyenv init - | source
-    bass source /etc/profile.d/google-cloud-cli.sh
     zoxide init fish | source
 end
 
@@ -20,7 +17,6 @@ abbr -a gcob 'git checkout -b'
 abbr -a gpf 'git push --force'
 abbr -a gc 'git commit'
 abbr -a gca 'git commit --amend'
-abbr -a --set-cursor -- gpmr "git push -u -o merge_request.create -o merge_request.title=(jira)': %'"
 abbr -a gd git diff
 abbr -a gl git log
 abbr -a gst git status

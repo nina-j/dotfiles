@@ -14,7 +14,7 @@ abbr -a dc 'docker compose'
 abbr -a gco 'git checkout'
 abbr -a gpu 'git push -u'
 abbr -a gcob 'git checkout -b'
-abbr -a gpf 'git push --force'
+abbr -a gpf 'git push --force-with-lease'
 abbr -a gc 'git commit'
 abbr -a gca 'git commit --amend'
 abbr -a gd git diff

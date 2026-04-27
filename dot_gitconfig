@@ -1,9 +1,10 @@
 [user]
 	name = Nina Jensen
 	email = hello@nina.run
+	signingkey = /home/nina/.ssh/id_ed25519.pub
 [core]
 	editor = vim
-	excludesfile = /home/nije/.gitignore
+	excludesfile = /home/nina/.gitignore
 [push]
 	default = current
 	autoSetupRemote = true
@@ -12,3 +13,7 @@
 	rebase = true
 [alias]
 	gone = ! git fetch -p && git for-each-ref --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" {print $1}' | xargs -r git branch -D
+[gpg]
+	format = ssh
+[init]
+	defaultBranch = main
